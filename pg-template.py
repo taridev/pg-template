@@ -19,6 +19,8 @@ screen = pg.display.set_mode(WINDOW_DIMENSION)
 pg.display.set_caption(TITLE)
 clock = pg.time.Clock()
 
+all_sprites = pg.sprite.Group()
+
 # Game loop
 running = True
 while running:
@@ -34,3 +36,4 @@ while running:
     screen.fill(BLACK)
     pg.display.flip()
 
+pg.quit()
